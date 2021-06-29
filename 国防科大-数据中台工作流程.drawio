@@ -1,1 +1,52 @@
-<mxfile host="app.diagrams.net" modified="2021-06-29T06:44:06.315Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36" version="14.8.2" etag="OCRZ5sX-yKsbmKQQaakh" type="github"><diagram id="xUCz9A-AON3LmXATbh6r">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-06-29T07:02:28.691Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36" etag="OWqALO-PlkOPhKDCVnM5" version="14.8.2" type="github">
+  <diagram id="xUCz9A-AON3LmXATbh6r" name="Page-1">
+    <mxGraphModel dx="765" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MpZOTV8Fjl1SZFNTFXq7-1" value="开始" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="40" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MpZOTV8Fjl1SZFNTFXq7-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MpZOTV8Fjl1SZFNTFXq7-2" target="MpZOTV8Fjl1SZFNTFXq7-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MpZOTV8Fjl1SZFNTFXq7-2" value="采集数据到数据湖" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="217" y="100" width="125" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MpZOTV8Fjl1SZFNTFXq7-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MpZOTV8Fjl1SZFNTFXq7-4" target="MpZOTV8Fjl1SZFNTFXq7-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MpZOTV8Fjl1SZFNTFXq7-4" value="结构化和融合处理数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="217" y="180" width="125" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MpZOTV8Fjl1SZFNTFXq7-6" value="" style="endArrow=classic;html=1;exitX=0.414;exitY=1.067;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MpZOTV8Fjl1SZFNTFXq7-1" target="MpZOTV8Fjl1SZFNTFXq7-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="410" as="sourcePoint" />
+            <mxPoint x="440" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MpZOTV8Fjl1SZFNTFXq7-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="MpZOTV8Fjl1SZFNTFXq7-7" target="MpZOTV8Fjl1SZFNTFXq7-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MpZOTV8Fjl1SZFNTFXq7-7" value="使用治理工具治理结构化的数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="217" y="360" width="125" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MpZOTV8Fjl1SZFNTFXq7-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MpZOTV8Fjl1SZFNTFXq7-8" target="MpZOTV8Fjl1SZFNTFXq7-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MpZOTV8Fjl1SZFNTFXq7-8" value="建库，将数据按规则组织，形成数据资源体系" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="217" y="270" width="125" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MpZOTV8Fjl1SZFNTFXq7-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MpZOTV8Fjl1SZFNTFXq7-9" target="MpZOTV8Fjl1SZFNTFXq7-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MpZOTV8Fjl1SZFNTFXq7-9" value="分发和共享成果数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="217" y="450" width="125" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MpZOTV8Fjl1SZFNTFXq7-16" value="结束" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="244.5" y="535" width="70" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
