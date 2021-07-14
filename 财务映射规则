@@ -1,1 +1,43 @@
-<mxfile host="app.diagrams.net" modified="2021-07-14T02:15:11.529Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" version="14.8.3" etag="KyKgwgv8urif6wz-qP-8" type="github"><diagram id="h9jwvY8imgKnHTHxJeWy">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-07-14T02:56:58.459Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="3I47N1GHpKtwFi3ej1z3" version="14.8.3" type="github">
+  <diagram id="h9jwvY8imgKnHTHxJeWy" name="Page-1">
+    <mxGraphModel dx="1139" dy="669" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WMBztf4NuzejNRmFinHK-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="WMBztf4NuzejNRmFinHK-1" target="WMBztf4NuzejNRmFinHK-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WMBztf4NuzejNRmFinHK-1" value="开始" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="10" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WMBztf4NuzejNRmFinHK-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WMBztf4NuzejNRmFinHK-2" target="WMBztf4NuzejNRmFinHK-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WMBztf4NuzejNRmFinHK-2" value="数据填报规则：公司名称（a）、规则名称(薪酬)、计算逻辑（1122+1123-1124）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WMBztf4NuzejNRmFinHK-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WMBztf4NuzejNRmFinHK-4" target="WMBztf4NuzejNRmFinHK-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WMBztf4NuzejNRmFinHK-4" value="开发udf pase_rule：传入公司名称和计算逻辑，解析填报规则表中的规则，拼装成sql1=（select sum(金额) from 原始表 where 公司名称=a and 科目名称=1122）+（select sum(金额) from 原始表 where 公司名称=a and 科目名称=1123）-（select sum(金额) from 原始表 where 公司名称=a and 科目名称=1124），同步执行sql得到结果值" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="265" y="200" width="210" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="WMBztf4NuzejNRmFinHK-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WMBztf4NuzejNRmFinHK-5" target="WMBztf4NuzejNRmFinHK-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WMBztf4NuzejNRmFinHK-5" value="应用udf: insert into 结果表 selet 公司名称，规则名称，pase_rule(计算逻辑) as 金额 from 原始表" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="265" y="400" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="WMBztf4NuzejNRmFinHK-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WMBztf4NuzejNRmFinHK-6" target="WMBztf4NuzejNRmFinHK-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WMBztf4NuzejNRmFinHK-6" value="行转列，结果表字段：公司名称，薪酬指标、指标2，...指标n" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="265" y="500" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="WMBztf4NuzejNRmFinHK-10" value="结束" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="610" width="80" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
